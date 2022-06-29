@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 class BookForm(forms.ModelForm):
     class Meta:
         model=Books
-        exclude = ("library",)
+        exclude = ("library","Cover_artist")
         widgets = {
             "Publication_date": forms.DateInput(attrs={"class": "form-control", "type": "date"})
         }

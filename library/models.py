@@ -14,7 +14,6 @@ class Books(models.Model):
     library=models.ForeignKey(User,on_delete=models.CASCADE,related_name="library")
     Author=models.CharField(max_length=150)
     Cover_artist=models.CharField(max_length=150)
-    Subject=models.CharField(max_length=150)
     Genre=models.CharField(max_length=150)
     Publisher=models.CharField(max_length=150)
     Publication_date=models.DateField(null=True)
