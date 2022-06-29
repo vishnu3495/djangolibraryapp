@@ -1,0 +1,30 @@
+{%extends 'student/base.html'%}
+{%block body_block%}
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-20">
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Publication Date</th>
+                <th>Media Type</th>
+                <th>Pages</th>
+            </tr>
+            {%for book in books%}
+            <tr>
+                <td>{{book.book_title}}</td>
+                <td>{{book.Author}}</td>
+                <td>{{book.Genre}}</td>
+                <td>{{book.Publication_date}}</td>
+                <td>{{book.Media_type}}</td>
+                <td>{{book.Pages}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+    <div class="col-4"></div>
+</div>
+
+{%endblock%}

@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{%block body_block%}
+
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-12">
+        <div class="card" style="width: 22rem;">
+  <div class="card-header">
+    <h3>{{book.book_title}}</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>AUTHOR:</strong>{{book.Author}}</li>
+        <li class="list-group-item"><strong>COVER ARTIST:</strong>{{book.Cover_artist}}</li>
+        <li class="list-group-item"><strong>SUBJECT:</strong>{{book.Subject}}</li>
+        <li class="list-group-item"><strong>GENRE:</strong>{{book.Genre}}</li>
+        <li class="list-group-item"><strong>PUBLISHER:</strong>{{book.Publisher}}</li>
+        <li class="list-group-item"><strong>PUBLICATION DATE:</strong>{{book.Publication_date}}</li>
+        <li class="list-group-item"><strong>MEDIA TYPE:</strong>{{book.Media_type}}</li>
+        <li class="list-group-item"><strong>PAGES:</strong>{{book.Pages}}</li>
+
+  </ul>
+</div>
+
+    </div>
+    <div class="col-4"></div>
+</div>
+{%endblock%}
